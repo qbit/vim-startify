@@ -25,7 +25,7 @@ How about some ASCII art action?
 
 ---
 
-__Custom command_ ( _empty by default_ ):
+__Custom command__ ( _empty by default_ ):
 
 Add a custom command.
 
