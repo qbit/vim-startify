@@ -25,6 +25,14 @@ How about some ASCII art action?
 
 ---
 
+__Custom command_ ( _empty by default_ ):
+
+Add a custom command.
+
+    let g:startify_custom_cmd = ['   [w]  Task Warrior', 'nnoremap <buffer><silent> w :TW<cr>']
+
+---
+
 __Files from directory__ ( _disabled by default_ ):
 
 This lists all files from the current directory sorted by modification time.

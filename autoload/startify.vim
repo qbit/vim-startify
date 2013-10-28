@@ -85,6 +85,11 @@ function! startify#insane_in_the_membrane() abort
     call append('$', ['   [e]  <empty buffer>', ''])
   endif
 
+  if exists('g:startify_custom_cmd')
+    call append('$', g:startify_custom_cmd[0])
+    execute g:startify_custom_cmd[1]
+  endif
+
   if get(g:, 'startify_session_detection', 1) && filereadable('Session.vim')
     call append('$', ['   [0]  '. getcwd() . s:sep .'Session.vim', ''])
     execute 'nnoremap <buffer> 0 :source Session.vim<cr>'
